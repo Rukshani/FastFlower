@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Hureeehhhhhhh</title>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+ var geocoder;
+  var map;
+  function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(7, 80);
+    var mapOptions = {
+      zoom: 8,
+      center: latlng
+    }
+    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  }
+
+  function codeAddress() {
+    var address = document.getElementById("address").value;
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert("Geocode was not successful for the following reason: " + status);
+      }
+    });
+  }
+  </script>
+</head>
+<body onload="initialize()">
+ <div id="map-canvas" style="width: 1000px; height:1000px;"></div>
+  <div>
+    <input id="address" type="textbox" value="courts road,gampaha">
+    <input type="button" value="Show" onclick="codeAddress()">
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Sign In</title>
+        <meta name="description" content="sign in customers" />
+        <meta name="keywords" content="siign in, customers" />
+        <meta name="author" content="Rukshani"/>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+   
+    <link href="Signin%20Template%20for%20Bootstrap_files/bootstrap.css" rel="stylesheet">
+    <link href="Signin%20Template%20for%20Bootstrap_files/signin.css" rel="stylesheet">
+    <style type="text/css">
+    #apDiv1 {
+	position: absolute;
+	left: 509px;
+	top: 220px;
+	width: 382px;
+	height: 214px;
+	z-index: 2;
+	background-color: rgba(102,102,102,0.8);
+}
+    #apDiv2 {
+	position: absolute;
+	left: 470px;
+	top: 190px;
+	width: 304px;
+	height: 226px;
+	z-index: 2;
+	background-color: rgba(153,153,153,0.4);
+	padding-left: 60px;
+}
+    </style>
+    <script src="Signin%20Template%20for%20Bootstrap_files/ie-emulation-modes-warning.js"></script>
+       
+    
+	</head>
+	<body>
+	<div id="apDiv2">
+	  <form class="form-signin" role="form" action="../signinprocess.jsp" method="post">
+		    <h2 class="form-signin-heading">Sign In</h2>
+		    <p>
+		      <input class="form-control" placeholder="Email address" required autofocus type="email" name="email" id="email">
+	        </p>
+		    <p>
+		      <input class="form-control" placeholder="Password" required type="password" name="password" id="password">
+	        </p>
+		    <div class="checkbox">
+		      <label>
+		        <input value="remember-me" type="checkbox">Remember me 
+		      </label>
+	        </div>
+		    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+	</div>
+	<div class="container demo-2">
+		<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                </div>
+      	</div>           
+	</div>
+     
+    <div class="container"></div> 
+    
+    <script src="Signin%20Template%20for%20Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+</body>
+</html>

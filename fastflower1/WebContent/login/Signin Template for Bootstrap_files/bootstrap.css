@@ -1,0 +1,18 @@
+@charset "utf-8";
+.no-js body #apDiv1 .form-signin .checkbox label input {
+	font-size: 10px;
+}
+.no-js body #apDiv2 .form-signin .form-signin-heading {
+	color: #FFFFFF;
+}
+body #apDiv2 .form-signin .form-signin-heading {
+	color: #FFFFFF;
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+}
+.no-js body #apDiv2 .form-signin .checkbox label {
+	color: #FFFFFF;
+}
+body #apDiv2 .form-signin .checkbox label {
+	color: #FFFFFF;
+}

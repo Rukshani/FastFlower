@@ -1,0 +1,345 @@
+			.frb_grid {
+			    max-width: 1300px;
+			    margin: 0 auto;
+			    list-style: none;
+			    text-align: center;
+			    float:left;
+			    position: relative;
+			    width: 100%;
+			}
+			 
+			.frb_grid li {
+			    display: inline-block;
+			    width: 440px;
+			    margin: 0;
+			    padding: 20px;
+			    text-align: left;
+			    position: relative;
+			}
+			.frb_grid .frb_figure {
+			    margin: 0;
+			    position: relative;
+			    width: 100%;
+			}
+			.frb_grid .frb_figure img {
+			    max-width: 100%;
+			    width: 100%;
+			    display: block;
+			    position: relative;
+
+			}
+			.frb_grid .frb_figcaption {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    background:transparent;
+			    color: #ed4e6e;
+			}
+			.frb_grid .frb_figcaption h3 {
+			    margin: 0;
+			    padding: 0;
+			    padding-top: 20px;
+			    color: #fff;
+			}
+			 
+			.frb_grid .frb_figcaption a {
+			    text-align: center;
+			    padding: 5px 10px;
+			    display: inline-block;
+			    background: transparent;
+			    color: #fff;
+			}
+			.frb_figcaption a{
+				max-width: 100px;
+			}
+			.inner{
+				padding-left: 20px;
+				text-align: left;
+			}
+/*style-1 */
+		.frb_cs-style-1 .frb_figcaption {
+		    height: 100%;
+		    width: 100%;
+		    opacity: 0;
+		    text-align: center;
+		    backface-visibility: hidden;
+		    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+		    -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+		    transition: transform 0.3s, opacity 0.3s;
+
+		}
+		.no-touch .frb_cs-style-1 .frb_figure:hover .frb_figcaption,
+		.frb_cs-style-1 .frb_figure.cs-hover .frb_figcaption {
+		    opacity: 1;
+		    -ms-transform: -ms-translate(15px, 15px);
+		    -webkit-transform: translate(15px, 15px);
+		    transform: translate(15px, 15px);
+
+		}
+		.frb_cs-style-1 .frb_figcaption h3 {
+		    margin-top: 70px;
+		}
+		 
+		.frb_cs-style-1 .frb_figcaption span {
+		    display: block;
+		}
+		 
+		.frb_cs-style-1 .frb_figcaption a {
+		    margin-top: 30px;
+		}
+/*style-2*/
+		.frb_cs-style-2 .frb_figure img {
+		    z-index: 10;
+		    -webkit-transition: -webkit-transform 0.4s;
+		    -ms-transition: -ms-transform 0.4s;
+		    transition: transform 0.4s;
+		}
+		 
+		.no-touch .frb_cs-style-2 .frb_figure:hover img,
+		.frb_cs-style-2 .frb_figure.cs-hover img {
+			-webkit-transform: translateY(-110px);
+			-ms-transform: translateY(-110px);
+		    transform: translateY(-110px);
+		}
+		.frb_cs-style-2 .frb_figcaption {
+		    height: 110px;
+		    width: 100%;
+		    top: auto;
+		    bottom: 0;
+		}
+		.frb_cs-style-2 .frb_figcaption a {
+		    position: absolute;
+		    right: 20px;
+		    bottom: 20px;
+		}
+
+		.frb_cs-style-2 .inner {
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			padding-right: 130px;
+			padding-bottom: 10px;
+		}
+/*style-3*/
+		.frb_cs-style-3 .frb_figure {
+		    overflow: hidden;
+		}
+		.frb_cs-style-3 .frb_figure img {
+			-ms-transition: -ms-transform 0.4s;
+			-webkit-transition: -webkit-transform 0.4s;
+		    transition: transform 0.4s;
+		}
+		 
+		.no-touch .frb_cs-style-3 .frb_figure:hover img,
+		.frb_cs-style-3 .frb_figure.cs-hover img {
+			-ms-transform: translateY(-50px);
+			-webkit-transform: translateY(-50px);
+		    transform: translateY(-50px);
+		}
+		.frb_cs-style-3 .frb_figcaption {
+		    width: 100%;
+		    top: auto;
+		    bottom: 0;
+		    opacity: 0;
+		    -ms-transform: translateY(100%);
+		    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+		    -webkit-transform: translateY(100%);
+		    -ms-transition: -ms-transform 0.4s, opacity 0.1s 0.3s;
+		    transform: translateY(100%);
+		    transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
+		.no-touch .frb_cs-style-3 .frb_figure:hover .frb_figcaption,
+		.frb_cs-style-3 .frb_figure.cs-hover .frb_figcaption {
+		    opacity: 1;
+		    -ms-transform: translateY(0px);
+		    -ms-transition: -ms-transform 0.4s, opacity 0.1s;
+		    -webkit-transform: translateY(0px);
+		    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+		    transform: translateY(0px);
+		    transition: transform 0.4s, opacity 0.1s;
+		}
+		.frb_cs-style-3 .frb_figcaption a {
+		    position: absolute;
+		    bottom: 20px;
+		    right: 20px;
+		}
+		.frb_cs-style-3 .frb_figcaption h3{
+			padding-left: 20px;
+			padding-right: 130px;
+		}
+		.frb_cs-style-3 .frb_figcaption span{
+			padding-left: 20px;
+			padding-right: 130px;
+			padding-bottom: 20px
+		}
+/*style-4*/
+		div.frb_cs-style-4 {
+			-webkit-perspective: 1700px;
+		    -webkit-perspective-origin: 0 50%;
+		    -ms-perspective: 1700px;
+		    -ms-perspective-origin: 0 50%;
+		    perspective: 1700px;
+		    perspective-origin: 0 50%;
+		}
+		.frb_cs-style-4 .frb_figure {
+			-ms-transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+		    transform-style: preserve-3d;
+		}
+		.frb_cs-style-4 .frb_figure > div {
+		    overflow: hidden;
+		}
+		.frb_cs-style-4 .frb_figure img {
+			-ms-transition: -ms-transform 0.4s;
+			-webkit-transition: -webkit-transform 0.4s;
+		    transition: transform 0.4s;
+		}
+		 
+		.no-touch .frb_cs-style-4 .frb_figure:hover img,
+		.frb_cs-style-4 .frb_figure.cs-hover img {
+			-ms-transform: translateX(25%);
+			-webkit-transform: translateX(25%);
+		    transform: translateX(25%);
+		}
+		.frb_cs-style-4 .frb_figcaption {
+		    height: 100%;
+		    width: 50%;
+		    opacity: 0;
+		    backface-visibility: hidden;
+		    -ms-transform-origin: 0 0;
+		    -ms-transform: rotateY(-90deg);
+		    -ms-transition: -ms-transform 0.4s, opacity 0.1s 0.3s;
+		    -webkit-transform-origin: 0 0;
+		    -webkit-transform: rotateY(-90deg);
+		    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+		    transform-origin: 0 0;
+		    transform: rotateY(-90deg);
+		    transition: transform 0.4s, opacity 0.1s 0.3s;
+		}
+		.no-touch .frb_cs-style-4 .frb_figure:hover .frb_figcaption,
+		.frb_cs-style-4 .frb_figure.cs-hover .frb_figcaption {
+		    opacity: 1;
+		   	-ms-transform: rotateY(0deg);
+		    -ms-transition: -ms-transform 0.4s, opacity 0.1s;
+		    -webkit-transform: rotateY(0deg);
+		    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+		    transform: rotateY(0deg);
+		    transition: transform 0.4s, opacity 0.1s;
+		}
+		.frb_cs-style-4 .frb_figcaption a {
+		    position: absolute;
+		    bottom: 20px;
+		    right: 20px;
+		}
+/*style-5*/
+		.frb_cs-style-5 .frb_figure img {
+		    z-index: 10;
+		    -ms-transition: -ms-transform 0.4s;
+		    -webkit-transition: -webkit-transform 0.4s;
+		    transition: transform 0.4s;
+		}
+		.no-touch .frb_cs-style-5 .frb_figure:hover img,
+		.frb_cs-style-5 .frb_figure.cs-hover img {
+			-ms-transform: scale(0.4);
+			-webkit-transform: scale(0.4);
+		    transform: scale(0.4);
+		}
+		.frb_cs-style-5 .frb_figcaption {
+		    height: 100%;
+		    width: 100%;
+		    opacity: 0;
+		    -ms-transform: scale(0.7);
+		    -webkit-transform: scale(0.7);
+		    transform: scale(0.7);
+		    backface-visibility: hidden;
+		    -ms-transition: -ms-transform 0.4s, opacity 0.4s;
+		    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+		    transition: transform 0.4s, opacity 0.4s;
+		}
+		.no-touch .frb_cs-style-5 .frb_figure:hover .frb_figcaption,
+		.frb_cs-style-5 .frb_figure.cs-hover .frb_figcaption {
+			-ms-transform: scale(1);
+			-webkit-transform: scale(1);
+		    transform: scale(1);
+		    opacity: 1;
+		}
+		.no-touch .frb_cs-style-5 .frb_figure:hover .frb_figcaption,
+		.frb_cs-style-5 .frb_figure.cs-hover .frb_figcaption {
+			-ms-transform: scale(1);
+			-webkit-transform: scale(1);
+		    transform: scale(1);
+		    opacity: 1;
+		}
+		.frb_cs-style-5 .frb_figure a {
+		    position: absolute;
+		    bottom: 20px;
+		    right: 20px;
+		}
+		.frb_grid.frb_cs-style-5 {
+			text-align: left;
+		}
+		.frb_cs-style-5 .frb_figcaption h3{
+			padding-top: 10px;
+			padding-left: 20px;
+		}
+		.frb_cs-style-5 .frb_figcaption span{
+			padding-left: 20px;
+		}
+/*style-6*/
+			.frb_cs-style-6 .frb_figure img {
+			    z-index: 10;
+			    -ms-transition: -ms-transform 0.4s;
+			    -webkit-transition: -webkit-transform 0.4s;
+			    transition: transform 0.4s;
+			}
+			 
+			.no-touch .frb_cs-style-6 .frb_figure:hover img,
+			.frb_cs-style-6 .frb_figure.cs-hover img {
+				-ms-transform: translateY(-50px) scale(0.5);
+				-webkit-transform: translateY(-50px) scale(0.5);
+			    transform: translateY(-50px) scale(0.5);
+			}
+			.frb_cs-style-6 .frb_figcaption {
+			    height: 100%;
+			    width: 100%;
+			}
+			.frb_cs-style-6 .frb_figcaption h3 {
+			    margin-top: 60%;
+			}
+			 
+			.frb_cs-style-6 .frb_figcaption a {
+			    position: absolute;
+			    bottom: 20px;
+			    right: 20px;
+			}
+			.frb_cs-style-6 .frb_figcaption h3{
+			padding-top: 0px;
+			}
+			.frb_cs-style-6 .inner{
+				position: absolute;
+				bottom: 0;
+				max-width: 100%;
+				padding-right: 130px;
+				padding-left: 20px;
+				padding-bottom: 10px;
+			}
+/*style-7*/
+		.frb_cs-style-7 .frb_figure {position: relative; float:left;}
+		.frb_cs-style-7 .frb_figcaption {position:absolute; top:-10px; left:-10px; width:100%; display:block; transition:border-color 300ms; -webkit-transition:border-color 300ms; -ms-transition:border-color 300ms; border:10px solid transparent; border-bottom:0; height:100%; box-sizing:content-box;
+-moz-box-sizing:content-box;}
+		.frb_cs-style-7 .inner {display:block; background:transparent; border:10px solid transparent; border-top:0; position:absolute; top:100%; left:-10px; right:-10px; transition:opacity 300ms; -webkit-transition:opacity 300ms; -ms-transition:opacity 300ms; opacity:0; text-align: left;}
+		.frb_cs-style-7 .frb_figure:hover .frb_figcaption  {border-color: transparent;}
+		.frb_cs-style-7 .frb_figure:hover .inner  {opacity:1;}
+		.frb_cs-style-7 .frb_grid .frb_figure img {z-index: 10;}
+		.frb_cs-style-7 .frb_figcaption a {
+			    position: absolute;
+			    bottom: 20px;
+			    right: 0px;
+			}
+		.frb_cs-style-7 .frb_figcaption h3 {
+			    padding-right: 120px;
+			}
+		.frb_cs-style-7 .frb_figcaption span {
+			    padding-right: 120px;
+			}
+			.frb_cs-style-7 .frb_figure .inner{padding-left: 0;}
